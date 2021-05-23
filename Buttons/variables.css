@@ -1,0 +1,50 @@
+:root {
+	/* PRIMARY BUTTON COLORS */
+	--primary: #007bff;
+	--primary-hover-focus-bg: #0069d9;
+	--primary-hover-focus-border: #0069d9;
+	--primary-focus-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+	--primary-outline-focus-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+	/* SECONDARY BUTTON COLORS */
+	--secondary: #6c757d;
+	--secondary-hover-focus-bg: #5a6268;
+	--secondary-hover-focus-border: #545b62;
+	--secondary-focus-box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+	--secondary-outline-focus-box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+		/* SUCCESS BUTTON COLORS */
+		--success: #198754;
+		--success-hover-focus-bg: #157347;
+		--success-hover-focus-border: #146c43;
+		--success-focus-box-shadow: 0 0 0 0.25rem rgb(60 153 110 / 50%);
+		--success-outline-focus-box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 50%);
+		/* DANGER BUTTON COLORS */
+		--danger: #dc3545;
+		--danger-hover-focus-bg: #bb2d3b;
+		--danger-hover-focus-border: #b02a37;
+		--danger-focus-box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+		--danger-outline-focus-box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 50%);
+		/* WARNING BUTTON COLORS */
+		--warning: #ffc107;
+		--warning-hover-focus-bg: #ffca2c;
+		--warning-hover-focus-border: #ffc720;
+		--warning-focus-box-shadow:0 0 0 0.25rem rgb(217 164 6 / 50%);
+		--warning-outline-focus-box-shadow: 0 0 0 0.25rem rgb(255 193 7 / 50%);
+		/* INFO BUTTON COLORS */
+		--info: #0dcaf0;
+		--info-hover-focus-bg: #31d2f2;
+		--info-hover-focus-border: #25cff2;
+		--info-focus-box-shadow: 0 0 0 0.25rem rgb(11 172 204 / 50%);
+		--info-outline-focus-box-shadow: 0 0 0 0.25rem rgb(13 202 240 / 50%);
+		/* LIGHT BUTTON COLORS */
+		--light: #f8f9fa;
+		--light-hover-focus-bg: #e2e6ea;
+		--light-hover-focus-border: #e2e6ea;
+		--light-focus-box-shadow: 0 0 0 0.25rem rgb(211 212 213 / 50%);
+		--light-outline-focus-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+		/* DARK BUTTON COLORS */
+		--dark: #343a40;
+		--dark-hover-focus-bg: #23272b;
+		--dark-hover-focus-border: #1d2124;
+		--dark-focus-box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+		--dark-outline-focus-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}

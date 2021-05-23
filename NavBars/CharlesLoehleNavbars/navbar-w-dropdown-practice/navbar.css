@@ -1,0 +1,88 @@
+.header {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+	min-height: 65px;
+	transition: min-height 0.3s;
+}
+
+.header__inner {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header__logo {
+	height: 72px;
+	margin-top: 12px;
+	margin-right: 1em;
+	vertical-align: top;
+}
+
+.header__title {
+	font-weight: 300;
+	font-size: 4em;
+	margin: 0.5em 0.25em;
+	/* make the logo and title side by side */
+	display: inline-block;
+	color: #212121;
+}
+/* hamburger */
+.header__menu {
+	display: none;
+}
+
+/* hamburger */
+.header__menu svg {
+	width: 32px;
+	fill: #888888;
+}
+
+.nav__item {
+	/* links horizontal */
+	display: inline-block;
+	width: 24%;
+	line-height: 24px;
+	padding: 24px;
+	text-transform: uppercase;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #616161;
+	padding: 1em;
+}
+
+.nav a:hover {
+	text-decoration: underline;
+	color: #212121;
+}
+
+.dropdown-menu {
+	display: none;
+}
+
+.dropdown-menu.show {
+	/* in large screens, take it out of the flow of the page so it overlaps content below it and doesn't affect elements around it */
+	position: absolute;
+	display: block;
+	z-index: 1;
+	background-color: white;
+}
+
+.dropdown-toggle::after {
+	display: inline-block;
+	content: '';
+	margin-left: 0.255em;
+	vertical-align: 0.255em;
+	border-top: 0.3em solid;
+	border-bottom: 0;
+	border-right: 0.3em solid transparent;
+	border-left: 0.3em solid transparent;
+}
+
+main {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}

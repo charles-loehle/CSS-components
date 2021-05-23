@@ -1,0 +1,174 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+}
+
+.content {
+  background-image: url('http://www.getuwired.com/devtest/Death_to_stock_photography_Vibrant.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  padding: 22px 0 0 0;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+  margin: 0;
+  padding-left: 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+li {
+  margin: 0 auto;
+}
+
+li a,
+.dropdown-btn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 8px 11px 24px 11px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropdown-btn {
+  background-color: #34cc99;
+  border-radius: 3px 3px 0 0;
+}
+
+ul.dropdown-menu a {
+  border-radius: 0;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #34cc99;
+  min-width: 160px;
+  padding-top: 5px;
+  border-radius: 0 0 3px 3px;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-shadow: 1px 1px #0b7551;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-menu a:hover {
+  background-color: #019966;
+  color: #fff;
+}
+
+li.menu-item.dropdown {
+  border-radius: 3px 3px 0 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/****************Responsive styles***************/
+@media screen and (min-width: 245px) {
+  nav:hover:before {
+    position: absolute;
+    top: 216px;
+    left: 0;
+    height: 7px;
+    display: block;
+    width: 100%;
+    background: #34cc99;
+    content: '';
+  }
+}
+@media screen and (min-width: 296px) {
+  nav:hover:before {
+    position: absolute;
+    top: 166px;
+    left: 0;
+    height: 7px;
+    display: block;
+    width: 100%;
+    background: #34cc99;
+    content: '';
+  }
+}
+@media screen and (min-width: 484px) {
+  nav:hover:before {
+    position: absolute;
+    top: 116px;
+    left: 0;
+    height: 7px;
+    display: block;
+    width: 100%;
+    background: #34cc99;
+    content: '';
+  }
+}
+
+@media screen and (min-width: 850px) {
+  nav {
+    display: flex;
+  }
+  .ul-container {
+    margin-top: 35px;
+    width: 60%;
+    padding-right: 85px;
+    padding-left: 38px;
+  }
+  .logo {
+    width: 40%;
+  }
+  nav:hover:before {
+    position: absolute;
+    top: 135px;
+    left: 0;
+    height: 7px;
+    display: block;
+    width: 100%;
+    background: #34cc99;
+    content: '';
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  nav:hover:before {
+    position: absolute;
+    top: 83px;
+    left: 0;
+    height: 7px;
+    display: block;
+    width: 100%;
+    background: #34cc99;
+    content: '';
+  }
+}

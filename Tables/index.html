@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="specific-styles/bootstrapStyleTables.css">
+    <link rel="stylesheet" href="specific-styles/bootstrapStyleCards.css">
+    <link rel="stylesheet" href="specific-styles/bootstrapStyleButtons.css">
+    <title>Tables</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bootstrap Tables</h1>
+    </div>
+
+    <section class="main bg-info">
+      <div class="container">
+        <div class="card mt-5">
+          <div class="card-body bg-light">
+            <h2>All Todos</h2>
+
+            <table class='table'>
+              <thead>
+                <tr>
+                  <th>#</td>
+                  <th>Title</td>
+                  <th>Description</td>
+                  <th>DueDate</td>
+                  <th>Action</td>   
+                </tr>
+              </thead>   
+
+              <thead>
+
+                <tr>
+                  <th>1</th>
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+      
+                  <td>
+                    <form action='UpdateToDo.php' method='POST'>
+                      <input type='hidden' name='q' value='q' />
+                      <input class='btn btn-primary' type='submit' value='Update'>                  
+                    </form>
+                  </td>
+                  <td>
+                    <form action="deletetodo.php" method="post">
+                      <input type='hidden' name='q' value='test' />
+                      <input class='btn btn-danger' type='submit' value='Delete'>  
+                    </form>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>2</th>
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+      
+                  <td>
+                    <form action='#' method='POST'>
+                      <input type='hidden' name='q' value='q' />
+                      <input class='btn btn-primary' type='submit' value='Update'>                  
+                    </form>
+                  </td>
+                  <td>
+                    <form action="#" method="post">
+                      <input type='hidden' name='q' value='test' />
+                      <input class='btn btn-danger' type='submit' value='Delete'>  
+                    </form>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>3</th>
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>
+                  <td>test</td>         
+                  <td>
+                    <form action='UpdateToDo.php' method='POST'>
+                      <input type='hidden' name='q' value='q' />
+                      <input class='btn btn-primary' type='submit' value='Update'>                  
+                    </form>
+                  </td>
+                  <td>
+                    <form action="deletetodo.php" method="post">
+                      <input type='hidden' name='q' value='test' />
+                      <input class='btn btn-danger' type='submit' value='Delete'>  
+                    </form>
+                  </td>
+                </tr>
+              </thead>
+
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="#" class="navbar-brand">Navbar</a>
+    <button class="navbar-toggler collapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a href="#" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Action2</a></li>
+            <li><a class="dropdown-item" href="#">Action3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Bootstrap 5 Style Navbar With Dropdowns</h1>
+    <div>
+      <p>Both .navbar-collapse and ul.dropdown-menu have a default style rule of</p>
+      <p>
+        <code>display: none;</code>
+      </p>
+      <code>
+        .collapse:not(.show) {
+          display: none;
+      }
+      </code>
+      <p>When clicked, a class of show is added that makes them <code>display: block;</code></p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

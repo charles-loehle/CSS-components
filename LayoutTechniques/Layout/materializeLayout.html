@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="base.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="specific-styles/materialize.css" />
+
+
+		<title>Layout!!</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="center">Materialize Layout</h1>
+			<div class="center">
+				<h3>This is a 3 column layout</h3>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col m4">
+					<h2 class="center">
+						<i class="fas fa-bolt"></i>
+					</h2>
+					<h5 class="center">Screen widths above 601px</h5>
+					<p class="light">
+						.row makes display: flex, .m4 give the column width of 33.333%.
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+						voluptas pariatur commodi quasi fugit, quas perferendis tempore
+						autem, odio minima a dolor eligendi.
+					</p>
+				</div>
+
+				<div class="col m4">
+					<h2 class="center">
+						<i class="fas fa-user-friends"></i>
+					</h2>
+					<h5 class="center">Screen widths below 601px</h5>
+					<p class="light">
+						The columns are width of 100% by default but at 601px they are width: 33.333%. Quisquam voluptas pariatur
+						commodi quasi fugit, quas perferendis tempore autem, odio minima a
+						dolor eligendi. Ullam, exercitationem quod.
+					</p>
+				</div>
+
+				<div class="col m4">
+					<h2 class="center">
+						<i class="fas fa-cog"></i>
+					</h2>
+					<h5 class="center">No need for flex-wrap: wrap.</h5>
+					<p class="light">
+						The .col class adds padding to the columns. Also .container class has base width: 90% and two breakpoints at 601px and 993px width of 85% and 70% respectively. .container has two breakpoints. The first at 601px then at 993px giving width of 80% and 70% respectively.
+					</p>
+				</div>
+
+				
+			</div>
+		</div>
+
+		
+
+
+		<script
+			src="https://kit.fontawesome.com/214921259b.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

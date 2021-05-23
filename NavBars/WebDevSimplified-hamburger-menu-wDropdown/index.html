@@ -1,0 +1,38 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="base.css" />
+		<link rel="stylesheet" href="navbar.css" />
+		<link rel="stylesheet" href="normalize.css" />
+		<title>Responsive Navbar</title>
+		<script src="https://kit.fontawesome.com/214921259b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		  <!-- Dropdown Structure -->
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="#!">one</a></li>
+			<li><a href="#!">two</a></li>
+			<li class="divider"></li>
+			<li><a href="#!">three</a></li>
+		</ul>
+		<nav class="navbar">
+			<div class="brand-title">Brand Name</div>
+			<a href="#" class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<div class="navbar-links">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown  <i class="fas fa-chevron-down"></i></a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<script src="script.js"></script>
+	</body>
+</html>

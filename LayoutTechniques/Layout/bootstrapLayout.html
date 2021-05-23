@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Layout</title>
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="base.css" />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+  rel="stylesheet"
+/>
+  <link rel="stylesheet" href="specific-styles/bootstrapStyle.css" />
+</head>
+<body>
+  <div class="container margin-top-2">
+    <header>
+      <h1 class="center">Bootstrap Layout</h1>
+      <h3 class="center">3 column layout</h3>
+    </header>
+    <section class="row">
+      <div class="one col-md-4">
+        <h2 class="font-wt-400">The .row Class</h2>
+        <p class="light">The .row class makes the element display: flex, flex-wrap: wrap, and gives its children padding-left and right and margin-top</p>
+      </div>
+      <div class="two col-md-4">
+        <h2 class="font-wt-400">The .col-md-4 Class</h2>
+        <p class="light">.col-md-4 creates three equal-width columns above 768px giving a width: 33.3333% </p>
+      </div>
+      <div class="three col-md-4">
+        <h2 class="font-wt-400">The .container class</h2>
+        <p class="light">.container has five break points assigning a max-width to each. Thea base .container styles give it centering with margin: 0 auto and padding left and right.</p>
+      </div>
+      <div class="four col-md-4">
+        <h2 class="font-wt-400">Content Area Four</h2>
+        <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, commodi facilis nam optio fuga magni, sint, rerum consectetur soluta dicta ipsum amet cumque libero quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, sit!</p>
+      </div>
+    </section>
+  </div>
+
+  <script
+  src="https://kit.fontawesome.com/214921259b.js"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>
