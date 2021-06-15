@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>jQuery Animated Sticky Nav</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section class="section-1">
+			<header>
+				<h2 class="logo">LOGO</h2>
+				<nav>
+					<a href="#" class="active">Home</a>
+					<a href="#">Services</a>
+					<a href="#">Contact</a>
+					<a href="#">About</a>
+				</nav>
+			</header>
+		</section>
+		<section class="section-2">
+			<h1>Hello</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<br />
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, <br />
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				<br />
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+				esse <br />
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+				cupidatat non <br />
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<h1>Hello</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<br />
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, <br />
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				<br />
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+				esse <br />
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+				cupidatat non <br />
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<h1>Hello</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<br />
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, <br />
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				<br />
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+				esse <br />
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+				cupidatat non <br />
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</section>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+
+		<script>
+			$(document).ready(function () {
+				$(window).on('scroll', function () {
+					// if we are not at the top of the page
+					// $(window).scrollTop() returns  0 if at top of page which is falsey. If not at top, it returns an integer greater than 0 which is truthy.
+					if ($(window).scrollTop()) {
+						// add a class of bgc to the header element
+						$('header').addClass('bgc');
+					} else {
+						// remove bgc class from header
+						$('header').removeClass('bgc');
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

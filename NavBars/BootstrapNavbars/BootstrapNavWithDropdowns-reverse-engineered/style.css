@@ -170,9 +170,7 @@ body {
 	align-items: center;
 }
 
-.collapse:not(.show) {
-	display: none;
-}
+.navbar-collapse {display:none;}
 
 @media (min-width: 992px) {
 	.navbar-expand-lg {

@@ -1,0 +1,109 @@
+.navbar {
+	display: flex;
+	/*push brand and navbar apart*/
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333;
+	color: white;
+	overflow: hidden;
+  padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+}
+
+.navbar.sticky {
+	position: fixed;
+	top: 0;
+	background-color: #000000 !important;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 600;
+}
+
+.navbar.offset {
+	-webkit-transform: translate3d(0, -100%, 0);
+	-ms-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+.navbar.scrolling {
+	-webkit-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.brand-title {
+	font-size: 1.5rem;
+	margin: 0.5rem;
+}
+
+.navbar-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navbar-links li a {
+	color: white;
+	padding: 1rem;
+	display: block;
+}
+.navbar-links li:hover {
+	background-color: #555;
+}
+.hamburger {
+	position: absolute;
+	top: 0.75rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.hamburger .bar {
+	width: 100%;
+	height: 3px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+	.hamburger {
+		display: flex;
+	}
+
+	.navbar-links {
+		width: 100%;
+		height: 0;
+		transition: height 0.2s;
+		overflow: hidden;
+	}
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.navbar-links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.navbar-links li {
+		text-align: center;
+	}
+
+	.navbar-links li a {
+		padding: 0.5rem 1rem;
+	}
+
+	/* show/hide with .active class */
+	.navbar-links.active {
+		height: 110px;
+	}
+}

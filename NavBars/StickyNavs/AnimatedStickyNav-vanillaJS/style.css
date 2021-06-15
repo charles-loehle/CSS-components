@@ -1,0 +1,53 @@
+/* ========================================== 
+*
+* Base Stylesheet
+* -------------------------------------------
+* 
+* TOC: 
+* # Base styles
+* # Grid
+*
+* =========================================== */
+
+/* ===================================================================
+ * # Base styles
+ * ------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body,
+html {
+	font-family: 'Roboto', sans-serif;
+	color: #212529;
+}
+
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 400;
+}
+h2,
+h3,
+h3 {
+	margin: 0;
+}
