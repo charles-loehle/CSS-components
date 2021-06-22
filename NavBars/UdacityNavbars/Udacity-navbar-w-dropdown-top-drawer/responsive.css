@@ -1,0 +1,43 @@
+@media screen and (max-width: 600px) {
+	.header__logo {
+		height: 48px;
+		margin-right: 0.5em;
+	}
+	.header__title {
+		margin-left: 0;
+		font-size: 2em;
+		vertical-align: bottom;
+	}
+	.nav {
+		z-index: 1;
+		background-color: white;
+		width: 300px;
+		position: absolute;
+		transform: translate(0, -355px);
+		transition: transform 0.3s ease;
+	}
+
+	/* when javascript add class of .open, open the nav drawer */
+	.nav.open {
+		transform: translate(0, 0);
+	}
+	.nav__item {
+		/* make the drawer links stack */
+		display: list-item;
+		border-bottom: 1px solid #9c9c9c;
+		width: 100%;
+		text-align: left;
+	}
+	.dropdown-menu.show {
+		/* for drawer view restore default position so it does'nt overlap, it pushes elements below it down */
+		position: static;
+	}
+
+	/* hamburger - make it display on small screens */
+	.header__menu {
+		display: inline-block;
+		position: absolute;
+		padding: 1em;
+		right: 0;
+	}
+}
