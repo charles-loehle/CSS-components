@@ -9,7 +9,9 @@ hamburger.addEventListener('click', () => {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  // The Element.scrollTop property gets or sets the number of pixels that an element's content is scrolled vertically.
+  console.log(document.body.scrollTop);
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
     document.querySelector(".navbar").style.padding = "5px 10px";
     document.querySelector(".brand-title").style.fontSize = "25px";
   } else {
