@@ -13,7 +13,6 @@ window.addEventListener('scroll', () => {
 		const sectionHeight = section.clientHeight; // 954px
 		// console.log(sectionHeight);
 
-		// the number of pixels the document is currently scrolled down
 		// if distance scrolled down is greater or equal to
 		// 72px - 954px / 3 = -246px,
 		// 1026 - 954 / 3 = 708,
